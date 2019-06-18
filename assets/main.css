@@ -1,0 +1,105 @@
+/* color primary #2574A9 */
+
+.menu {
+    background-color: #E4F1FE;
+    height: 125vh;
+}
+
+.menu h1 {
+    color: #2574A9;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+
+.menu a {
+    color: #000;
+    font-weight: 500;
+}
+
+.menu a.is-active {
+    color: #2574A9;
+}
+
+.menu a:hover {
+    color: #2574A9;
+}
+
+.menu h2 {
+    margin-top: 2em;
+}
+
+.main {
+    padding: 2.5em;
+}
+
+.judul {
+    margin-bottom: 2em;
+}
+
+.card {
+    border-radius: 1em;
+}
+
+.laporan {
+    padding: 0.5em;
+}
+
+.laporan .columns {
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+}
+
+.laporan .columns .column h1 {
+    color: #2574A9;
+}
+
+.transaksi {
+    padding: 0.5em;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table {
+    background-color: transparent;
+}
+
+.table.is-striped tbody tr{
+    background-color: transparent !important;
+    border-bottom: 2px solid #888;
+}
+
+.modal-content .box .header {
+    padding-bottom: 5em;
+}
+
+.modal-card .total-harga, .modal-content .box .total-harga {
+    padding-bottom: 3em;
+}
+
+
+.modal-content .box .button-modals {
+    padding-bottom: 2em;
+}
+
+.transaksi-button {
+    padding-bottom: 2em;
+}
+
+/* Responsive for mobile */
+
+@media only screen and (max-width: 768px) {
+    .menu {
+        height: 65vh;
+    }
+}
+
+
+
+@media only screen and (min-width: 769px){
+    .modal-small .modal-card, .modal-small .modal-content {
+        width: 400px;
+    }
+}

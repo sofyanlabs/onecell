@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Onecell - Produk</title>
+    <link rel="stylesheet" href="assets/bulma.css">
+    <link rel="stylesheet" href="assets/main.css">
+</head>
+<body>
+
+
+    <div class="columns is-marginless">
+        <div class="menu has-text-centered column is-3">
+            <h1 class="is-size-3 has-text-weight-bold">One Cell</h1>
+            <a href="index.html" class="is-size-4">Dashboard</a>
+            <br><br>
+            <a href="produk.html" class="is-size-4 is-active">Produk</a>
+            <br><br>
+            <a href="transaksi.html" class="is-size-4">Transaksi</a>
+
+            <h2 class="has-text-weight-bold">Copyright <br>
+            Ahmad Sofyan</h2>
+        </div>
+
+        <div class="main column is-9">
+
+            <div class="judul">
+                <div class="column">
+                    <div class="level">
+                       <div class="level-left">
+                        <div class="level-item">
+                            <p class="is-size-4 has-text-weight-semibold">Produk</p>
+                        </div>
+                       </div>
+                       <div class="level-right">
+                        <div class="level-item">
+                            <p class="button is-rounded is-size-5 has-background-grey-lighter has-text-weight-semibold is-pulled-right">
+                                Home / Produk
+                            </p>
+                        </div>
+                       </div> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="transaksi-button">
+                <a href="#" class="button is-link is-rounded modal-button" data-target="#tambah-produk">Tambah Produk</a>
+
+                <div class="is-pulled-right">
+                    <form action="#">
+                        <div class="field has-addons">
+                            <div class="control">
+                                <input class="input is-rounded" type="text" placeholder="Cari Produk">
+                            </div>
+                            <div class="control">
+                                <a class="button is-link is-rounded">
+                                Search
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="transaksi card has-background-grey-lighter table-responsive">
+                <table class="table is-fullwidth is-striped">
+                    <thead>
+                        <tr>
+                            <th>ID Produk</th>
+                            <th>Nama Produk</th>
+                            <th>Stok Produk</th>
+                            <th>Harga</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#1</td>
+                            <td>Charger Samsung Galaxy S5</td>
+                            <td>20</td>
+                            <td>Rp.100.000</td>
+                            <td>
+                                <a href="#" class="button is-warning is-rounded is-small modal-button" data-target="#modal-edit">Edit</a>
+                                <a href="#" class="button is-danger is-rounded is-small modal-button" data-target="#modal-hapus">Hapus</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#2</td>
+                            <td>Charger Samsung Galaxy S6</td>
+                            <td>30</td>
+                            <td>Rp.120.000</td>
+                            <td>
+                                <a href="#" class="button is-warning is-rounded is-small modal-button" data-target="#modal-edit">Edit</a>
+                                <a href="#" class="button is-danger is-rounded is-small modal-button" data-target="#modal-hapus">Hapus</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#3</td>
+                            <td>Charger Samsung Galaxy S7</td>
+                            <td>40</td>
+                            <td>Rp.150.000</td>
+                            <td>
+                                <a href="#" class="button is-warning is-rounded is-small modal-button" data-target="#modal-edit">Edit</a>
+                                <a href="#" class="button is-danger is-rounded is-small modal-button" data-target="#modal-hapus">Hapus</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div id="tambah-produk" class="modal modal-small">
+    <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Tambah Produk</p>
+            </header>
+            <section class="modal-card-body">
+                <div class="field">
+                    <label class="label">Nama Produk</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Masukkan Nama Produk">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Stok Produk</label>
+                    <div class="control">
+                        <input class="input" type="number">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Harga Produk</label>
+                    <div class="control">
+                        <input class="input" type="number">
+                    </div>
+                </div>
+
+                <div class="button-modals">
+                    <div class="is-pulled-right">
+                        <a href="#" class="button is-link is-rounded">Tambah Produk</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    <button class="modal-close"></button>
+    </div>
+
+    <div id="modal-edit" class="modal modal-small">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Edit Produk</p>
+            </header>
+            <section class="modal-card-body">
+                <div class="field">
+                    <label class="label">Nama Produk</label>
+                    <div class="control">
+                        <input class="input" type="text" value="Charger Samsung Galaxy S5">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Stok Produk</label>
+                    <div class="control">
+                        <input class="input" type="number" value="20">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Harga Produk</label>
+                    <div class="control">
+                        <input class="input" type="number" value="100000">
+                    </div>
+                </div>
+
+                <div class="button-modals">
+                    <div class="is-pulled-right">
+                        <a href="#" class="button is-warning is-rounded">Edit Produk</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    <button class="modal-close"></button>
+    </div>
+
+    <div id="modal-hapus" class="modal modal-small">
+    <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="box has-text-centered">
+                <p class="is-size-5">Yakin ingin menghapus produk ini?</p>
+                <br>
+                <a href="#" class="button is-danger is-rounded">Hapus Produk</a>
+            </div>
+        </div>
+    <button class="modal-close"></button>
+    </div>
+
+    <script src="assets/jquery.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="assets/main.js"></script>
+</body>
+</html>

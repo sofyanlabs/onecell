@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Onecell - Transaksi</title>
+    <link rel="stylesheet" href="assets/bulma.css">
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="assets/datepicker.min.css">
+</head>
+<body>
+
+
+    <div class="columns is-marginless">
+        <div class="menu has-text-centered column is-3">
+            <h1 class="is-size-3 has-text-weight-bold">One Cell</h1>
+            <a href="index.html" class="is-size-4">Dashboard</a>
+            <br><br>
+            <a href="produk.html" class="is-size-4">Produk</a>
+            <br><br>
+            <a href="transaksi.html" class="is-size-4 is-active">Transaksi</a>
+
+            <h2 class="has-text-weight-bold">Copyright <br>
+            Ahmad Sofyan</h2>
+        </div>
+
+        <div class="main column is-9">
+
+            <div class="judul">
+                <div class="column">
+                    <div class="level">
+                       <div class="level-left">
+                        <div class="level-item">
+                            <p class="is-size-4 has-text-weight-semibold">Transaksi</p>
+                        </div>
+                       </div>
+                       <div class="level-right">
+                        <div class="level-item">
+                            <p class="button is-rounded is-size-5 has-background-grey-lighter has-text-weight-semibold is-pulled-right">
+                                Home / Transaksi
+                            </p>
+                        </div>
+                       </div> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="transaksi-button">
+                <a href="#" class="button is-link is-rounded modal-button" data-target="#tambah-transaksi">Tambah Transaksi</a>
+                <a href="#" class="button is-success is-rounded modal-button" data-target="#cetak">Cetak Laporan</a>
+
+                <div class="is-pulled-right">
+                    <form action="#">
+                        <div class="field has-addons">
+                            <div class="control">
+                                <input class="input is-rounded" type="text" placeholder="Cari Transaksi">
+                            </div>
+                            <div class="control">
+                                <a class="button is-link is-rounded">
+                                Search
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="transaksi card has-background-grey-lighter table-responsive">
+                <table class="table is-fullwidth is-striped">
+                    <thead>
+                        <tr>
+                            <th>ID Transaksi</th>
+                            <th>Tanggal</th>
+                            <th>Jenis</th>
+                            <th>Total Harga</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#1223</td>
+                            <td>17 Mei 2019</td>
+                            <td>Pemesanan</td>
+                            <td>Rp.550.000</td>
+                            <td>
+                                <a href="#" class="button is-success is-rounded is-small modal-button" data-target="#modal-detail">Detail</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#1223</td>
+                            <td>17 Mei 2019</td>
+                            <td>Pemesanan</td>
+                            <td>Rp.550.000</td>
+                            <td>
+                                <a href="#" class="button is-success is-rounded is-small modal-button" data-target="#modal-detail">Detail</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#1223</td>
+                            <td>17 Mei 2019</td>
+                            <td>Pemesanan</td>
+                            <td>Rp.550.000</td>
+                            <td>
+                                <a href="#" class="button is-success is-rounded is-small modal-button" data-target="#modal-detail">Detail</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#1223</td>
+                            <td>17 Mei 2019</td>
+                            <td>Pemesanan</td>
+                            <td>Rp.550.000</td>
+                            <td>
+                                <a href="#" class="button is-success is-rounded is-small modal-button" data-target="#modal-detail">Detail</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#1223</td>
+                            <td>17 Mei 2019</td>
+                            <td>Pemesanan</td>
+                            <td>Rp.550.000</td>
+                            <td>
+                                <a href="#" class="button is-success is-rounded is-small modal-button" data-target="#modal-detail">Detail</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div id="cetak" class="modal">
+    <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="box">
+                <p class="is-size-5 has-text-weight-bold" style="margin-bottom: 0.5em">Cetak Laporan</p>
+
+                <div class="field is-grouped">
+                    <p class="control is-expanded">
+                        <input class="input start-date" type="text" placeholder="Tanggal Mulai">
+                    </p>
+                    <p class="control is-expanded">
+                        <input class="input end-date" type="text" placeholder="Tanggal Selesai">
+                    </p>
+                    <p class="control">
+                        <a class="button is-success">
+                        Cetak
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    <button class="modal-close"></button>
+    </div>
+
+    <div id="tambah-transaksi" class="modal">
+        <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title">Tambah Transaksi</p>
+                    <p class="has-text-weight-semibold">17 Mei 2019</p>
+                </header>
+                <section class="modal-card-body">
+                    <div class="field">
+                    <label class="label">Jenis Transaksi</label>
+                        <div class="control">
+                            <div class="select">
+                            <select>
+                                <option>Pemesanan</option>
+                                <option>Pengembalian</option>
+                            </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <label class="label">Pilih Produk</label>
+                    <div class="field has-addons">
+                        <p class="control">
+                            <span class="select">
+                            <select>
+                                <option>Charger Samsung Galaxy S5</option>
+                                <option>Charger Samsung Galaxy S6</option>
+                                <option>Charger Samsung Galaxy S7</option>
+                            </select>
+                            </span>
+                        </p>
+                        <p class="control">
+                            <input class="input" type="text" placeholder="Jumlah Produk">
+                        </p>
+                        <p class="control">
+                            <a class="button is-link is-rounded">
+                            Tambah Produk
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="table is-fullwidth is-striped">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Nama Barang</th>
+                                    <th>Jumlah</th>
+                                    <th>Harga</th>
+                                    <th>Total</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Charger Samsung Galaxy S5</td>
+                                    <td>5</td>
+                                    <td>Rp.50.000</td>
+                                    <td>Rp.250.000</td>
+                                    <td>
+                                        <a href="#" class="button is-warning is-rounded is-small modal-button">Edit</a>
+                                        <a href="#" class="button is-danger is-rounded is-small modal-button">Hapus</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Charger Samsung Galaxy S6</td>
+                                    <td>5</td>
+                                    <td>Rp.60.000</td>
+                                    <td>Rp.300.000</td>
+                                    <td>
+                                        <a href="#" class="button is-warning is-rounded is-small modal-button">Edit</a>
+                                        <a href="#" class="button is-danger is-rounded is-small modal-button">Hapus</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="total-harga">
+                        <p class="is-size-4 has-text-weight-semibold is-pulled-right">Total Harga : Rp.550.000</p>
+                    </div>
+
+                    <div class="button-modals">
+                        <div class="is-pulled-right">
+                            <a href="#" class="button is-link is-rounded">Tambah & Cetak Transaksi</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        <button class="modal-close"></button>
+    </div>
+
+    <div id="modal-detail" class="modal">
+    <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="box  table-responsive">
+                <div class="header">
+                    <p class="is-size-5 has-text-weight-bold is-pulled-left">Transaksi Details</p>
+                    <p class="is-size-5 has-text-weight-bold is-pulled-right">#1223 - 17 Mei 2019 Pemesanan</p>
+                </div>
+
+                <table class="table is-fullwidth is-striped">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama Barang</th>
+                            <th>Jumlah</th>
+                            <th>Harga</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Charger Samsung Galaxy S5</td>
+                            <td>5</td>
+                            <td>Rp.50.000</td>
+                            <td>Rp.250.000</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Charger Samsung Galaxy S6</td>
+                            <td>5</td>
+                            <td>Rp.60.000</td>
+                            <td>Rp.300.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                
+                <div class="total-harga">
+                    <p class="is-size-4 has-text-weight-semibold is-pulled-right">Total Harga : Rp.550.000</p>
+                </div>
+
+                <div class="button-modals">
+                    <div class="is-pulled-right">
+                        <a href="#" class="button is-success is-rounded">Cetak</a>
+                        <a href="#" class="button is-link is-rounded" style="margin-left: 0.5em">Selesai</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <button class="modal-close"></button>
+    </div>
+
+    <script src="assets/jquery.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="assets/datepicker.min.js"></script>
+    <script src="assets/main.js"></script>
+</body>
+</html>
